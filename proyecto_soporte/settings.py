@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
     'rest_framework',
     'soporte',
 
@@ -128,3 +129,9 @@ MAILERS = {
         'BACKEND': 'django.core.mail.backends.console.EmailBackend',
     },
 }
+
+# Redirección tras iniciar sesión en la interfaz navegable de DRF
+LOGIN_REDIRECT_URL = '/api/'
+
+# Opcional: Redirección tras cerrar sesión
+LOGOUT_REDIRECT_URL = '/api-auth/login/'

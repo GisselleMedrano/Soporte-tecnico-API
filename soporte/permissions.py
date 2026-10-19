@@ -6,7 +6,7 @@ class EsAdminOPropietario(permissions.BasePermission):
         if not request.user or not request.user.is_authenticated:
             return False
         return True 
-    def has_object_permission(self, request, view):
+    def has_object_permission(self, request, view, obj):
         #administradores is staff con acceso total
         if request.user.is_staff:
             return True
