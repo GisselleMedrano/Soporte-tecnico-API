@@ -18,9 +18,24 @@ API RESTful desarrollada con Django y Django REST Framework para gestionar solic
 - Django REST Framework 3.18.3
 - SQLite
 
-## Instalación y ejecución (Windows / PowerShell)
+## Instalación y ejecucón (Windows / PowerShell)
 
 1. Clonar el repositorio:
 
 git clone [https://github.com/GisselleMedrano/Soporte-tecnico-API](https://github.com/GisselleMedrano/Soporte-tecnico-API)
 cd Soporte-tecnico-API
+
+## Usurios de Prueba
+## Usuarios de prueba
+
+| Perfil       / Usuario | Contraseña | is_staff |
+
+| Administrador | Valeria | Inacap2026 | Sí |
+| Usuario normal | Usuario1 | Inacap2025 | No |
+
+### Creación de usuarios
+
+Si la base de datos se reinicia, ejecute los siguientes pasos:
+
+1. Crear administrador:
+python manage.py createsuperuser
